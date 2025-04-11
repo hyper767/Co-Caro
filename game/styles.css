@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.menu {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.menu-options {
+    margin-bottom: 20px;
+}
+
+.menu-options label {
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+.menu-options select {
+    padding: 5px;
+    font-size: 1em;
+}
+
+.menu button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.menu button:hover {
+    background-color: #45a049;
+}
+
+#gameScreen {
+    text-align: center;
+}
+
+#turnMessage {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#board {
+    display: inline-grid;
+    grid-gap: 1px;
+    background-color: #ccc;
+    padding: 5px;
+    border: 2px solid #333;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #f0f0f0;
+}
+
+.cell.x {
+    color: red;
+}
+
+.cell.o {
+    color: blue;
+}
+
+.hidden {
+    display: none;
+}
