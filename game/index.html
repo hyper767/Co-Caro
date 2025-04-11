@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cờ Caro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="startMenu" class="menu">
+        <h1>Cờ Caro</h1>
+        <div class="menu-options">
+            <label for="boardSize">Kích thước bàn cờ:</label>
+            <select id="boardSize">
+                <option value="9">9x9</option>
+                <option value="15">15x15</option>
+            </select>
+        </div>
+        <button onclick="startGame()">Bắt đầu chơi</button>
+    </div>
+
+    <div id="gameScreen" class="hidden">
+        <h2 id="turnMessage">Lượt của bạn (X)</h2>
+        <div id="board"></div>
+    </div>
+
+    <div id="endMenu" class="menu hidden">
+        <h1 id="endMessage"></h1>
+        <div class="menu-options">
+            <button onclick="startGame()">Chơi lại</button>
+            <button onclick="backToMenu()">Thoát ra menu</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+  </html>
